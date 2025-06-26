@@ -1,0 +1,126 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #111111;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+}
+
+[data-theme="light"] {
+  --bg: var(--bg-light);
+  --text: var(--text-light);
+}
+
+[data-theme="dark"] {
+  --bg: var(--bg-dark);
+  --text: var(--text-dark);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a, h1, p, .btn {
+  color: var(--text);
+}
+
+
+/* ✅ LEFT HAND SECTION BACKGROUND */
+.bg-blob {
+  background: url('assets/Vector 1.png') no-repeat left center;
+  background-size: 80%;
+  min-height: 50vh;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+/* ✅ HAND IMAGE ON LEFT */
+.hand-img {
+  width: auto;
+  max-width: 350px;
+  z-index: 1;
+}
+
+/* ✅ TEXT SIDE */
+.text-content {
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0px;
+  z-index: 1;
+}
+
+.t-tall {
+  font-size: 72px;       /* Make T taller */
+  line-height: 1;
+  vertical-align: bottom; /* Keeps it aligned with the rest of the line */
+  display: inline-block;
+}
+
+.custom-hr {
+  width: 30vw; /* or any width you want */
+  margin: 30px auto; /* centers the HR */
+  border: none;
+  border-top: 2px solid var(--text); /* styled based on theme */
+  opacity: 0.5; /* optional for subtle effect */
+}
+
+
+/* ✅ RIGHT YELLOW VECTOR */
+.yellow-vector-right {
+  position: absolute;
+  top: 10%;
+  right: -300px;
+  width: 200px;
+  z-index: 0;
+}
+
+/* ✅ BOTTOM DECORATIONS */
+.vector-bottom-left,
+.vector-bottom-right {
+  position: absolute;
+  bottom: 0;
+  height: 25vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.vector-bottom-left {
+  left: 0;
+}
+
+.vector-bottom-right {
+  right: 0;
+}
+
+.social-icons {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+}
+
+.social-icons i {
+  font-size: 24px;
+}
+
+.email-static {
+  position: fixed;
+  right: 5px;
+  bottom: 110px;
+  transform: rotate(-90.34deg);
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--text); /* Automatically switches color with theme */
+  padding: 5px 10px;
+  z-index: 9999;
+}
+

@@ -1,0 +1,153 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #111111;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --primary: #fff500;
+}
+
+[data-theme="light"] {
+  --bg: var(--bg-light);
+  --text: var(--text-light);
+}
+
+[data-theme="dark"] {
+  --bg: var(--bg-dark);
+  --text: var(--text-dark);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+a, h1, p, .btn, i {
+  color: var(--text);
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+.btn:hover,
+i:hover {
+  color: var(--primary);
+}
+
+.btn-contact {
+width: 175;
+height: 60;
+top: 649px;
+left: 269px;
+border-width: 3px;
+border-radius: 10px;
+background: linear-gradient(90deg, #DF580C 0%, #FD993D 100%);
+border: 3px solid #FFFFFF;
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+padding: 12px;
+color: #FEFEFE;
+
+}
+
+.getintouch{
+padding: 12px;
+width: 175;
+height: 60.000003814697266;
+top: 649px;
+left: 469px;
+border-width: 3px;
+border-radius: 10px;
+border: 3px solid #FFFFFF;
+background: linear-gradient(90deg, #434343 0%, #000000 100%);
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+color: #ffffff;
+}
+
+.hello-badge {
+width: 197px;
+height: 72px;
+text-align: center;
+font-size: 36px;
+color: #ffffff;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(90deg, #32F6F6 0%, #A6A79F 100%);
+width: 197;
+height: 72;
+top: 300px;
+left: 269px;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+
+}
+
+.main-section {
+  height: 1080px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 3rem;
+}
+
+
+.profile-wrapper {
+  background-image: url('assets/Hero Background.svg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 170px 300px 300px 800px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 50px;
+  border-radius: 170px 300px 300px 800px;
+}
+
+.yellow-blob {
+  position: absolute;
+  top: 675px;
+  left: 425px;
+  width: 250px;
+  transform: rotate(-28deg);
+  z-index: -1;
+}
+
+
+.social-icons {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+}
+
+.social-icons i {
+  font-size: 24px;
+}
+
+.email-static {
+  position: fixed;
+  right: 5px;
+  bottom: 110px;
+  transform: rotate(-90.34deg);
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--text); /* Automatically switches color with theme */
+  padding: 5px 10px;
+  z-index: 9999;
+}
+
